@@ -1,0 +1,26 @@
+
+  {{#if randomBeer}}
+    <div class="row w-50">
+
+    <div class="col-4 d-flex justify-content-center align-items-center">
+      <img src="{{image_url}}" class="card-img-top img-fluid beer-image" alt="Beer label" >
+    </div>
+
+  {{/if}}
+
+  {{#unless randomBeer}}
+    <div class="row d-flex justify-content-center">
+
+    <div class="col-12 d-flex justify-content-center align-items-center">
+      <img src="{{image_url}}" class="card-img-top img-fluid beer-image" alt="Beer label" >
+    </div>
+
+  {{/unless}}
+
+  <div class="col-8">
+    <div class="card-body">
+    <h4 class="card-title">
+      <a href="/beers/{{id}}">{{name}}</a>
+    </h4>
+    <h6 class="tagline">{{tagline}}</h6>
+    <p class="card-text">{{description}}</p>

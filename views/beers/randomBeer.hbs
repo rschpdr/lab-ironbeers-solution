@@ -1,0 +1,28 @@
+    <div class="card">
+      {{!-- <div class="row w-50">
+        <div class="col-4 d-flex justify-content-center align-items-center">
+          <img src="{{image_url}}" class="card-img-top img-fluid beer-image" alt="Beer label" >
+        </div>
+        <div class="col-8">
+          <div class="card-body">
+            <h4 class="card-title">{{name}}</h4>
+            <h6 class="tagline">{{tagline}}</h6>
+            <p class="card-text">{{description}}</p> --}}
+
+            {{> beerPartial}}
+
+            <h6>Food Pairings</h6>
+
+            <ul>
+              {{#each food_pairing}}
+
+                <li>{{this}}</li>
+
+              {{/each}}
+            </ul>
+
+            <p><strong>Brewers Tips: </strong> {{brewers_tips}}</p>
+          </div>
+        </div>
+      </div>
+    </div>

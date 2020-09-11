@@ -1,0 +1,21 @@
+<div class="row row-margin">
+
+{{#each beers}}
+
+  <div class="col-xs-12 col-sm-6 col-md-4">
+     <div class="card">
+      {{!-- <img src="{{this.image_url}}" class="card-img-top img-fluid beer-image" alt="Beer label" >
+      <div class="card-body">
+        <h4 class="card-title">{{this.name}}</h4>
+        <h6 class="tagline">{{this.tagline}}</h6>
+        <p class="card-text">{{this.description}}</p> --}}
+              {{> beerPartial this}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{{/each}}
+
+</div>

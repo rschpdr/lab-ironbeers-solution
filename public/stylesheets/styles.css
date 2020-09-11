@@ -5,3 +5,44 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+/* BOOTSTRAP OVERRIDES */
+
+.navbar-dark {
+  background-color: #2081c3;
+}
+
+.card {
+  border: none;
+}
+
+body {
+  height: 92vh;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0a2c42;
+  color: #f7f9f9;
+}
+
+.beer-image {
+  height: 200px;
+  width: auto;
+  object-fit: scale-down;
+}
+
+.tagline {
+  color: #bfbfbf;
+}
+
+.container-margin {
+  margin-top: 56px;
+}
+
+.row-margin {
+  margin-bottom: 56px;
+}
